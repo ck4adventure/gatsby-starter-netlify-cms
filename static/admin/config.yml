@@ -27,8 +27,10 @@ collections:
     - { label: "Name", name: "name", widget: "string" }
     - { label: "Geometry", name: "geometry", widget: "string" }
     - { label: "Material", name: "material", widget: "number" }
-    - { label: "Activities", name: "activities", widget: "select", options: ["casual", "fitness", "construction", "dressy", "delivery"] }
     - { label: "Layer", name: "layer", widget: "select", options: ["shoes", "bottom", "top", "one_piece", "outerwear", "outerwear_equipment"] }
+    - { label: "Genders", name: "genders", widget: "select", "options": ["male", "female"], multiple: true, default: ["male", "female"]}
+    - { label: "Activities", name: "activities", widget: "select", options: ["casual", "fitness", "construction", "dressy", "delivery"], multiple: true, default: ["casual"] }
+    - { label: "Primary Color", name: "color_1", widget: "select", options: ["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "white", "gray", "black"], multiple: true }
 
   - name: "blog"
     label: "Blog"
