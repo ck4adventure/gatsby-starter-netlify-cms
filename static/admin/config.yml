@@ -13,6 +13,22 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "garments"
+    label: "Garments"
+    create: true
+    fields:
+    - {
+        label: "Template Key",
+        name: "templateKey",
+        widget: "hidden",
+        default: "blog-post",
+      }
+    - { label: "Name", name: "name", widget: "string" }
+    - { label: "Geometry", name: "geometry", widget: "string" }
+    - { label: "Material", name: "material", widget: "number" }
+    - { label: "Activities", name: "activities", widget: "select", options: ["casual", "fitness", "construction", "dressy", "delivery"] }
+    - { label: "Layer", name: "layer", widget: "select", options: ["shoes", "bottom", "top", "one_piece", "outerwear", "outerwear_equipment"] }
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
