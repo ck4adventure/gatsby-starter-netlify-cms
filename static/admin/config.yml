@@ -15,13 +15,14 @@ public_folder: /img
 collections:
   - name: "garments"
     label: "Garments"
+    folder: "src/pages/garments"
     create: true
     fields:
     - {
-        label: "Template Key",
-        name: "templateKey",
+        label: "Type Key",
+        name: "typekey",
         widget: "hidden",
-        default: "blog-post",
+        default: "garment",
       }
     - { label: "Name", name: "name", widget: "string" }
     - { label: "Geometry", name: "geometry", widget: "string" }
